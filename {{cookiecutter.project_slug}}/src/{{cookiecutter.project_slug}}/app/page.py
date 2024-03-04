@@ -1,6 +1,6 @@
-from tui import PageResponse
-from tui import components as c
-from tui import version
+from flect import PageResponse
+from flect import components as c
+from flect import version
 
 
 async def page() -> PageResponse:
@@ -13,10 +13,10 @@ async def page() -> PageResponse:
                     class_name="h-14 border-b text-sm flex items-center px-6 justify-between",
                     children=[
                         c.Link(
-                            href="https://tui.celerforge.com/",
+                            href="https://flect.celerforge.com/",
                             children=[
                                 c.Text(
-                                    text="tui",
+                                    text="flect",
                                     class_name="font-medium text-xl",
                                 )
                             ],
@@ -31,7 +31,7 @@ async def page() -> PageResponse:
                     class_name="flex justify-center p-32 flex-col items-center",
                     children=[
                         c.Heading(
-                            level=1, text="Welcome to tui framework",
+                            level=1, text="Welcome to flect framework",
                             class_name="flex items-center justify-center text-5xl font-bold mb-4"
                         ),
                         c.Text(
@@ -50,7 +50,7 @@ async def page() -> PageResponse:
                                     ],
                                 ),
                                 c.Link(
-                                    href="https://github.com/Chaoyingz/tui",
+                                    href="https://github.com/Chaoyingz/flect",
                                     children=[
                                         c.Button(
                                             children="GitHub",

@@ -1,3 +1,3 @@
-# cookiecutter-tui
+# cookiecutter-flect
 
 Describe your project here.
