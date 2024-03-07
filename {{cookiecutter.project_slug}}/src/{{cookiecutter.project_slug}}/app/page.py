@@ -35,7 +35,7 @@ async def page() -> PageResponse:
                             class_name="flex items-center justify-center text-5xl font-bold mb-4"
                         ),
                         c.Text(
-                            text="Get started by editing src/{{cookiecutter.project_slug}}/page.py",
+                            text="Get started by editing src/{{cookiecutter.project_slug}}/app/page.py",
                         ),
                         c.Container(
                             tag="div",
