@@ -17,8 +17,38 @@ build-backend = "hatchling.build"
 managed = true
 dev-dependencies = []
 
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "ruff>=0.3.1",
+    "pyright>=1.1.352",
+    "pytest>=8.0.2",
+    "pytest-asyncio>=0.23.5",
+    "coverage>=7.4.3",
+]
+
 [tool.hatch.metadata]
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/{{cookiecutter.project_slug}}"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+
+[tool.ruff.lint]
+extend-select = ["Q", "RUF100", "UP", "I"]
+
+[tool.pyright]
+include = ["src/{{cookiecutter.project_slug}}"]
+extraPaths = ["src/{{cookiecutter.project_slug}}"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+addopts = "-s -p no:warnings"
+cache_dir = ".pytest_cache/"
+testpaths = [
+    "src/{{cookiecutter.project_slug}}",
+    "tests",
+]
