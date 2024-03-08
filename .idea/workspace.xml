@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1dba3b6-049a-4282-aaa2-1b0ae1abe4c7" name="Changes" comment="" />
+    <list default="true" id="f1dba3b6-049a-4282-aaa2-1b0ae1abe4c7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +28,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/chaoying/dev/os/cookiecutter-tui",
+    "last_opened_file_path": "/Users/chaoying/dev/os/cookiecutter-flect",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
@@ -47,6 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709469668024</updated>
       <workItem from="1709469669171" duration="89000" />
+      <workItem from="1709814168998" duration="200000" />
     </task>
     <servers />
   </component>
