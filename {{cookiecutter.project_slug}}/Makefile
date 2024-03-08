@@ -3,7 +3,7 @@ path = src/{{cookiecutter.project_slug}}
 .PHONY: install
 install:
 	rye sync
-	rye install pre-commit
+	rye install pre-commit -f
 	pre-commit install
 
 .PHONY: format
