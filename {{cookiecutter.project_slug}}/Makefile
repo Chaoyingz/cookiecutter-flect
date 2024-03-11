@@ -15,15 +15,17 @@ format:
 lint:
 	rye run ruff check $(path) tests
 	rye run ruff format --check $(path) tests
+{%- if cookiecutter.enable_type_checking -%}
 
 .PHONY: typecheck
 typecheck:
 	rye run pyright
 
+{%- endif %}
 .PHONY: test
 test:
 	rye run coverage run -m pytest
 
 .PHONY: dev
 dev:
-	export PYTHONPATH=src && uvicorn src.{{cookiecutter.project_slug}}.main:app --reload
+	export PYTHONPATH=src && rye run uvicorn src.{{cookiecutter.project_slug}}.main:app --reload

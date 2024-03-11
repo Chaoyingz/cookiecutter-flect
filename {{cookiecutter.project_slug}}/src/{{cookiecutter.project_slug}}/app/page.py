@@ -5,7 +5,7 @@ from flect import version
 
 async def page() -> PageResponse:
     return PageResponse(
-        element=c.Container(
+        body=c.Container(
             tag="section",
             children=[
                 c.Container(
@@ -45,7 +45,7 @@ async def page() -> PageResponse:
                                     href="/",
                                     children=[
                                         c.Button(
-                                            children="Go to docs",
+                                            children=[c.Text(text="Go to docs")],
                                         )
                                     ],
                                 ),
@@ -53,7 +53,7 @@ async def page() -> PageResponse:
                                     href="https://github.com/Chaoyingz/flect",
                                     children=[
                                         c.Button(
-                                            children="GitHub",
+                                            children=[c.Text(text="Github")],
                                             variant="outline",
                                         )
                                     ],
